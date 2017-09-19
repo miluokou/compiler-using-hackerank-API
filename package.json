@@ -2,7 +2,6 @@
     "name": "CodeCompiler",
     "version": "0.0.0",
     "private": true,
-
     "devDependencies": {
         "asyncjs": "0.0.x",
         "jsdom": "9.3.0",
