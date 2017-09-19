@@ -7,11 +7,13 @@ Inorder to set it up get your self registered on Hackerrank and signup for an AP
 Set up yor API KEY in the server.
 
 ## Technologies Used
+
 * Node JS
 * Jade
 * Express JS
 * Hackerrank API
-* Ace Editor
+* Ace.js
+* Bootstrap
 
 
 ## Setup and Installation
@@ -32,7 +34,7 @@ run `node app `
 
 License
 
-This project is released under the MIT License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 
 
