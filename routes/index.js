@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
     res.render('index', { language: "1", langCode: "c_cpp" });
 });
 
-router.get('/java', function(req, res, next) {
-    res.render('java', { language: "1", langCode: "c_cpp" });
+router.get('/ruby', function(req, res, next) {
+    res.render('ruby', { language: "1", langCode: "c_cpp" });
 });
 
 router.get('/c#', function(req, res, next) {
@@ -25,6 +25,18 @@ router.get('/javascript', function(req, res, next) {
 
 router.get('/python', function(req, res, next) {
     res.render('python', { language: "1", langCode: "c_cpp" });
+});
+
+router.get('/ruby', function(req, res, next) {
+    res.render('ruby', { language: "1", langCode: "c_cpp" });
+});
+
+router.get('/html', function(req, res, next) {
+    res.render('html', { language: "1", langCode: "c_cpp" });
+});
+
+router.get('/css', function(req, res, next) {
+    res.render('css', { language: "1", langCode: "c_cpp" });
 });
 
 router.post('/compile', function(req, res, next) {
