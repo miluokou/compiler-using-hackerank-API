@@ -4,39 +4,27 @@ var hackerRank = require('machinepack-hackerrank');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('index', { language: "1", langCode: "c_cpp" });
+    res.render('index', { language: "2", langCode: "c_cpp" });
 });
 
-router.get('/ruby', function(req, res, next) {
-    res.render('ruby', { language: "1", langCode: "c_cpp" });
+router.get('/csharp', function(req, res, next) {
+    res.render('csharp', { language: "9", langCode: "csharp" });
 });
 
-router.get('/c#', function(req, res, next) {
-    res.render('c#', { language: "1", langCode: "c_cpp" });
-});
-
-router.get('/cplus', function(req, res, next) {
-    res.render('/cplus', { language: "1", langCode: "c_cpp" });
+router.get('/c', function(req, res, next) {
+    res.render('c', { language: "1", langCode: "c_cpp" });
 });
 
 router.get('/javascript', function(req, res, next) {
-    res.render('javascript', { language: "1", langCode: "c_cpp" });
+    res.render('javascript', { language: "20", langCode: "javascript" });
 });
 
 router.get('/python', function(req, res, next) {
-    res.render('python', { language: "1", langCode: "c_cpp" });
+    res.render('python', { language: "5", langCode: "python" });
 });
 
-router.get('/ruby', function(req, res, next) {
-    res.render('ruby', { language: "1", langCode: "c_cpp" });
-});
-
-router.get('/html', function(req, res, next) {
-    res.render('html', { language: "1", langCode: "c_cpp" });
-});
-
-router.get('/css', function(req, res, next) {
-    res.render('css', { language: "1", langCode: "c_cpp" });
+router.get('/java', function(req, res, next) {
+    res.render('java', { language: "3", langCode: "java" });
 });
 
 router.post('/compile', function(req, res, next) {
@@ -72,11 +60,4 @@ router.get('/changelang/:langCode/:language', function(req, res, next) {
 
 });
 
-router.get('/changelang/:langCode/:language', function(req, res, next) {
-    var language = req.params.language.trim();
-    var langCode = req.params.langCode.trim();
-
-    res.render('java', { language: language, langCode: langCode });
-
-});
 module.exports = router;
