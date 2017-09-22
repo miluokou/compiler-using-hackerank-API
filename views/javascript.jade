@@ -48,15 +48,15 @@ head
 				#editor.col-md-7
 
 				#result.col-md-5
-					//- .form-group
-					//- 	label
-					//- 	select.form-control.languageSelector#languageSelector(onchange="changeLanguage()" name="lang" required)
-					//- 		option(value="1" selected=(language=="1") ) C
-					//- 		option(value="2" selected=(language=="2") ) C++
-					//- 		option(value="9" selected=(language=="9")) C#
-					//- 		option(value="3"  selected=(language=="3")) Java
-					//- 		option(value="20"  selected=(language=="20")) Javascript
-					//- 		option(value="5" selected=(language=="5") ) Python
+					.form-group
+						label
+						select.form-control.languageSelector#languageSelector(onchange="changeLanguage()" name="lang" required)
+							option(value="1" selected=(language=="1") ) C
+							option(value="2" selected=(language=="2") ) C++
+							option(value="9" selected=(language=="9")) C#
+							option(value="3"  selected=(language=="3")) Java
+							option(value="20"  selected=(language=="20")) Javascript
+							option(value="5" selected=(language=="5") ) Python
 					#compile
 						#compileResponse
 							textarea.customInput(placeholder="Provide your input here each seperated by a new line.")
