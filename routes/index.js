@@ -12,7 +12,7 @@ router.get('/csharp', function(req, res, next) {
 });
 
 router.get('/c', function(req, res, next) {
-    res.render('c', { language: "1", langCode: "c_cpp" });
+    res.render('c', { language: "1", langCode: "c" });
 });
 
 router.get('/javascript', function(req, res, next) {
